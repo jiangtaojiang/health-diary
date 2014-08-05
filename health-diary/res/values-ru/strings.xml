@@ -5,4 +5,6 @@
     <string name="empty_string"></string>
     
     <string name="btn_statistic">Статистика</string>
+    
+    <string name="version">Версия %1$s</string>
 </resources>
