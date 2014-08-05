@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Health Diary</string>
+
+    <string name="empty_string"></string>
+    
+    <string name="btn_statistic">Statistic</string>
+</resources>

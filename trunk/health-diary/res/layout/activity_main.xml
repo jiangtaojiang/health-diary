@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/empty_string"
+        android:scaleType="center"
+        android:src="@drawable/background" />
+            
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_button_margin" >
+
+        <Button
+            android:id="@+id/btn_bpressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/main_button_margin"
+            android:layout_marginTop="@dimen/main_button_margin"
+            android:drawableLeft="@drawable/blood_pressure_btn_icon" />
+
+        <Button
+            android:id="@+id/btn_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/main_button_margin"
+            android:layout_marginTop="@dimen/main_button_margin"
+            android:drawableLeft="@drawable/weight_btn_icon" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_statistic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/main_button_margin"
+        android:drawableLeft="@drawable/statistic_btn_icon"
+        android:text="@string/btn_statistic" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/main_button_margin" >
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/main_button_margin"
+            android:drawableLeft="@drawable/import_btn_icon" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/main_button_margin"
+            android:drawableLeft="@drawable/export_btn_icon" />
+
+    </RelativeLayout>
+
+	</LinearLayout>
+</FrameLayout>
