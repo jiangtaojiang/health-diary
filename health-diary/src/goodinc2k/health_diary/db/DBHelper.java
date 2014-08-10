@@ -2,7 +2,6 @@ package goodinc2k.health_diary.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
@@ -21,10 +20,10 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String KEY_VALUE = "value";
 
     // Values
-    public static final String VALUE_METRIC_WEIGHT = "weight";
-    public static final String VALUE_METRIC_PULSE = "pulse";
-    public static final String VALUE_METRIC_DIASTOLIC = "diastolic"; //max pressure
-    public static final String VALUE_METRIC_SYSTOLIC = "systolic"; //min pressure
+    public static final int VALUE_METRIC_WEIGHT = 1;
+    public static final int VALUE_METRIC_PULSE = 2;
+    public static final int VALUE_METRIC_DIASTOLIC = 3; //min pressure
+    public static final int VALUE_METRIC_SYSTOLIC = 4; //max pressure
 
     public DBHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -35,7 +34,7 @@ public class DBHelper extends SQLiteOpenHelper {
 		String CREATE_VALUES_TABLE = "CREATE TABLE " + TABLE_VALUES + "("
                 + KEY_ID + " INTEGER AUTOINCREMENT PRIMARY KEY,"
 				+ KEY_DATETIME + " TEXT,"
-				+ KEY_METRIC + " TEXT,"
+				+ KEY_METRIC + " INTEGER,"
                 + KEY_VALUE + " INTEGER" + ")";
 
 		db.execSQL(CREATE_VALUES_TABLE);

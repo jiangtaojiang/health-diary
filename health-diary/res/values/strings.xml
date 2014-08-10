@@ -5,6 +5,15 @@
     <string name="empty_string"></string>
     
     <string name="btn_statistic">Statistic</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_save">Save</string>
+    
+    <string name="lbl_new_record">New record</string>
+    <string name="lbl_edit_record">Change record</string>
+    <string name="lbl_systolic">Systolic</string>
+    <string name="lbl_diastolic">Diastolic</string>
+    <string name="lbl_pulse">Pulse</string>
+    <string name="lbl_weight">Weight</string>
     
     <string name="version">Version %1$s</string>
 </resources>
