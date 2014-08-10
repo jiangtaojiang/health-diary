@@ -5,6 +5,15 @@
     <string name="empty_string"></string>
     
     <string name="btn_statistic">Статистика</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="btn_save">Сохранить</string>
+    
+    <string name="lbl_new_record">Новая запись</string>
+    <string name="lbl_edit_record">Изменить запись</string>
+    <string name="lbl_systolic">Систолическое</string>
+    <string name="lbl_diastolic">Диастолическое</string>
+    <string name="lbl_pulse">Пульс</string>
+    <string name="lbl_weight">Вес</string>
     
     <string name="version">Версия %1$s</string>
 </resources>
