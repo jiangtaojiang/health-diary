@@ -14,6 +14,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="center"
         android:orientation="vertical" >
 
 	    <TextView
@@ -26,11 +27,11 @@
 	        android:textAppearance="?android:attr/textAppearanceLarge" />
 	
 	    <TextView
-	        android:id="@+id/lbl_systolic"
+	        android:id="@+id/lbl_weight"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_marginLeft="@dimen/screen_border_spacer"
-	        android:text="@string/lbl_systolic"
+	        android:text="@string/lbl_weight"
 	        android:textAppearance="?android:attr/textAppearanceMedium" />
 	
 	    <LinearLayout
@@ -65,81 +66,7 @@
 	
 	    </LinearLayout>
 	
-	    <TextView
-	        android:id="@+id/lbl_diastolic"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_marginLeft="@dimen/screen_border_spacer"
-	        android:text="@string/lbl_diastolic"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-	
-	    <LinearLayout
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content" >
-	
-	        <ImageButton
-	            android:id="@+id/btn_diastolic_minus"
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:contentDescription="@string/empty_string"
-	            android:src="@drawable/minus_btn_icon" />
-	
-	        <EditText
-	            android:id="@+id/edit_diastolic"
-	            android:layout_width="0dp"
-	            android:layout_height="wrap_content"
-	            android:layout_weight="1"
-	            android:ems="10"
-	            android:gravity="center_vertical|center_horizontal"
-	            android:inputType="number" />
-	
-	        <ImageButton
-	            android:id="@+id/btn_diastolic_plus"
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:contentDescription="@string/empty_string"
-	            android:src="@drawable/plus_btn_icon" />
-	
-	    </LinearLayout>
-
-	    <TextView
-	        android:id="@+id/lbl_pulse"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_marginLeft="@dimen/screen_border_spacer"
-	        android:text="@string/lbl_pulse"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-	
-	    <LinearLayout
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content" >
-	
-	        <ImageButton
-	            android:id="@+id/btn_pulse_minus"
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:contentDescription="@string/empty_string"
-	            android:src="@drawable/minus_btn_icon" />
-	
-	        <EditText
-	            android:id="@+id/edit_pulse"
-	            android:layout_width="0dp"
-	            android:layout_height="wrap_content"
-	            android:layout_weight="1"
-	            android:ems="10"
-	            android:gravity="center_vertical|center_horizontal"
-	            android:inputType="number" />
-	
-	        <ImageButton
-	            android:id="@+id/btn_pulse_plus"
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:contentDescription="@string/empty_string"
-	            android:src="@drawable/plus_btn_icon" />
-	
-	    </LinearLayout>
-
-	    <LinearLayout
+		<LinearLayout
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:baselineAligned="false"
@@ -163,8 +90,8 @@
 	                android:id="@+id/edit_date"
 	                android:layout_width="match_parent"
 	                android:layout_height="wrap_content"
-	                android:layout_marginLeft="@dimen/screen_border_spacer"
-	                android:layout_marginRight="@dimen/screen_border_spacer"
+	                android:layout_marginLeft="1dp"
+	                android:layout_marginRight="1dp"
 	                android:inputType="date" />
 
 	        </LinearLayout>
@@ -187,37 +114,35 @@
 	                android:id="@+id/edit_time"
 	                android:layout_width="match_parent"
 	                android:layout_height="wrap_content"
-	                android:layout_marginLeft="@dimen/screen_border_spacer"
-	                android:layout_marginRight="@dimen/screen_border_spacer"
+	                android:layout_marginLeft="1dp"
+	                android:layout_marginRight="1dp"
 	                android:inputType="time" />
 
 	        </LinearLayout>
 
 	    </LinearLayout>
-
+	    
 	    <LinearLayout
 	        android:layout_width="match_parent"
-	        android:layout_height="fill_parent"
+	        android:layout_height="match_parent"
 	        android:layout_gravity="bottom"
 	        android:gravity="bottom"
 	        android:weightSum="1" >
 
 	        <Button
 	            android:id="@+id/btn_cancel"
-	            android:layout_width="match_parent"
+	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
 	            android:layout_weight="0.5"
 	            android:text="@string/btn_cancel" />
 
 	        <Button
 	            android:id="@+id/btn_save"
-	            android:layout_width="match_parent"
+	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
 	            android:layout_weight="0.5"
 	            android:text="@string/btn_save" />
 	    </LinearLayout>
 
 	</LinearLayout>
-
-    
 </FrameLayout>
