@@ -14,6 +14,8 @@
     <string name="lbl_diastolic">Diastolic</string>
     <string name="lbl_pulse">Pulse</string>
     <string name="lbl_weight">Weight</string>
+    <string name="lbl_date">Date</string>
+    <string name="lbl_time">Time</string>
     
     <string name="version">Version %1$s</string>
 </resources>

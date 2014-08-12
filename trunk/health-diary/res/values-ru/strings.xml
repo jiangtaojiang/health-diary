@@ -14,6 +14,8 @@
     <string name="lbl_diastolic">Диастолическое</string>
     <string name="lbl_pulse">Пульс</string>
     <string name="lbl_weight">Вес</string>
+    <string name="lbl_date">Дата</string>
+    <string name="lbl_time">Время</string>
     
     <string name="version">Версия %1$s</string>
 </resources>

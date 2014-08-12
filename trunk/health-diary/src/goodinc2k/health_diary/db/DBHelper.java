@@ -22,8 +22,9 @@ public class DBHelper extends SQLiteOpenHelper {
     // Values
     public static final int VALUE_METRIC_WEIGHT = 1;
     public static final int VALUE_METRIC_PULSE = 2;
-    public static final int VALUE_METRIC_DIASTOLIC = 3; //min pressure
-    public static final int VALUE_METRIC_SYSTOLIC = 4; //max pressure
+    public static final int VALUE_METRIC_SYSTOLIC = 3; //max pressure
+    public static final int VALUE_METRIC_DIASTOLIC = 4; //min pressure
+    
 
     public DBHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);

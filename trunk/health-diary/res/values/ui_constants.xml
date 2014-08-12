@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <dimen android:id="@+id/main_button_margin" name="main_button_margin">24dp</dimen>
+    <dimen android:id="@+id/screen_border_spacer" name="screen_border_spacer">1dp</dimen>
     
 </resources>

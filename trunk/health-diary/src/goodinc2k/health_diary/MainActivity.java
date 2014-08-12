@@ -30,14 +30,25 @@ public class MainActivity extends Activity {
 			versionText.setText(versionName);
 		}
 		
-		Button btn = (Button) findViewById(R.id.btn_bpressure);
-		btn.setOnClickListener(mAddPressureListener);
+		Button btnAddPressure = (Button) findViewById(R.id.btn_bpressure);
+		btnAddPressure.setOnClickListener(mAddPressureListener);
+		
+		Button btnAddWeight = (Button) findViewById(R.id.btn_weight);
+		btnAddWeight.setOnClickListener(mAddWeightListener);
 	}
 
 	private OnClickListener mAddPressureListener = new OnClickListener() {
 		public void onClick(View v) {
 			Intent intent = new Intent(MainActivity.this, PressureRecordActivity.class);
 			intent.putExtra(PressureRecordActivity.ACTIVITY_MODE_PARAM, PressureRecordActivity.ACTIVITY_MODE_NEW);
+			MainActivity.this.startActivity(intent);
+		}
+	};
+	
+	private OnClickListener mAddWeightListener = new OnClickListener() {
+		public void onClick(View v) {
+			Intent intent = new Intent(MainActivity.this, WeightRecordActivity.class);
+			intent.putExtra(WeightRecordActivity.ACTIVITY_MODE_PARAM, WeightRecordActivity.ACTIVITY_MODE_NEW);
 			MainActivity.this.startActivity(intent);
 		}
 	};
